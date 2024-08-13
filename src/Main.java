@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {
         int num;
-        int soma = 0;
+        int sum = 0;
         short totalNumbers = 0;
         short evenNumbers = 0;
         short oddNumbers = 0;
@@ -13,10 +13,10 @@ public class Main {
 
         do {
             num = Integer.parseInt(JOptionPane.showInputDialog(null,
-                    "<html>Insira um número" +
+                    "<html>Input a number" +
                             "<br>" +
-                    "<em>O Valor 0 interrompe o programa</em></html>", JOptionPane.ERROR_MESSAGE));
-            soma += num;
+                    "<em>The program will stop when entering 0</em></html>", JOptionPane.ERROR_MESSAGE));
+            sum += num;
             totalNumbers++;
 
             if (num % 2 == 0) evenNumbers++;
@@ -28,19 +28,19 @@ public class Main {
 
         } while (num != 0);
 
-        averageArith = (float) soma / totalNumbers;
+        averageArith = (float) sum / totalNumbers;
 
         JOptionPane.showMessageDialog(null,
-                "<html>Resultado final" +
+                "<html>Final results" +
                         "<hr><br>" +
-                        "Soma dos valores: " + soma + "<br>" +
-                        "Total de valores digitados: " + totalNumbers + "<br>" +
-                        "Pares: " + evenNumbers + "<br>" +
-                        "Ímpares: " + oddNumbers + "<br>" +
-                        "Acima de 100: " + above1HundredNumbers + "<br>" +
-                        "Negativos: " + negativeNumbers + "<br>" +
-                        "0 digitados: " + zeroNumbers + "<br>" +
-                        "Média aritmética dos valores: " + averageArith + "<br>" +
+                        "Sum of values: " + sum + "<br>" +
+                        "Total values entered: " + totalNumbers + "<br>" +
+                        "Evens: " + evenNumbers + "<br>" +
+                        "Odds: " + oddNumbers + "<br>" +
+                        "Above 100: " + above1HundredNumbers + "<br>" +
+                        "Negatives: " + negativeNumbers + "<br>" +
+                        "0 entered: " + zeroNumbers + "<br>" +
+                        "Arithmetic mean of values: " + averageArith + "<br>" +
                         "</html>");
 
     }
