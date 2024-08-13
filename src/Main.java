@@ -8,7 +8,6 @@ public class Main {
         short oddNumbers = 0;
         short above1HundredNumbers = 0;
         short negativeNumbers = 0;
-        short zeroNumbers = 0;
         float averageArith;
 
         do {
@@ -24,7 +23,6 @@ public class Main {
 
             if (num > 100) above1HundredNumbers++;
             else if (num < 0) negativeNumbers++;
-            else if (num == 0) zeroNumbers++;
 
         } while (num != 0);
 
@@ -39,7 +37,6 @@ public class Main {
                         "Odds: " + oddNumbers + "<br>" +
                         "Above 100: " + above1HundredNumbers + "<br>" +
                         "Negatives: " + negativeNumbers + "<br>" +
-                        "0 entered: " + zeroNumbers + "<br>" +
                         "Arithmetic mean of values: " + averageArith + "<br>" +
                         "</html>");
 
